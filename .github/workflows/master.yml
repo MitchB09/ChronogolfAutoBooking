@@ -7,11 +7,7 @@ env:
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '30 9 * * *'
-    - cron:  '27 1 * * *'
-    - cron:  '28 2 * * *'
-    - cron:  '29 3 * * *'
-    - cron:  '30 4 * * *'
+    - cron:  '*/5 * * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
