@@ -1,2 +1,10 @@
-setEnvironmentVariables.sh
+# Node
 node_modules/
+
+# Cypress Artifacts
+cypress/downloads/**
+cypress/screenshots/**
+cypress/videos/**
+
+# Custom
+setEnvironmentVariables.sh

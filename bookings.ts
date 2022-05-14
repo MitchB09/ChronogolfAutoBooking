@@ -10,7 +10,7 @@ const bookingData: BookingData[] = [
     {
         clubId: 18848,
         month: 'May',
-        day: 18,
+        day: 19,
         time: '4:30 PM',
         numPlayers: 3
     }

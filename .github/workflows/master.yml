@@ -7,7 +7,7 @@ env:
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '28 9 * * *'
+    - cron:  '29 9 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -30,4 +30,18 @@ jobs:
     - name: Book Tee Times
       run: |
         npx cypress run --spec "cypress/integration/specs/bookTeeTime.spec.ts" --env account_email=${{ secrets.CHRONOGOLF_EMAIL }},account_password=${{ secrets.CHRONOGOLF_PASSWORD }}
+
+    - name: Upload screenshots
+      uses: actions/upload-artifact@latest
+      if: failure()
+      with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+    - name: Upload video
+      uses: actions/upload-artifact@latest
+      if: failure()
+      with:
+          name: cypress-video
+          path: cypress/videos
     
