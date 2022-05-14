@@ -1,3 +1,7 @@
 {
-    "baseUrl": "https://www.chronogolf.ca"
+    "baseUrl": "https://www.chronogolf.ca",
+    "retries": {
+        "runMode": 2,
+        "openMode": 0
+    }
 }
