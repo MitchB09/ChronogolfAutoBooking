@@ -1,0 +1,22 @@
+{
+  "name": "chronogolfbooking",
+  "version": "1.0.0",
+  "description": "Used for autobooking teetimes in chronogold",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "chronogolf",
+    "booking",
+    "teetimes"
+  ],
+  "author": "MitchB09",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.6.1"
+  },
+  "dependencies": {
+    "typescript": "^4.6.4"
+  }
+}
